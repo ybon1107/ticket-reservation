@@ -50,28 +50,28 @@
 Redis는 모든 퍼센타일에서 RDBMS보다 현저히 낮은 응답 시간을 기록했습니다.
 
 **첫번째 시나리오**
-- **Redis**:
-  - 50th percentile: 5 ms
-  - 75th percentile: 5 ms
-  - 95th percentile: 7 ms
-  - 99th percentile: 8 ms
 - **RDBMS**:
   - 50th percentile: 21 ms
   - 75th percentile: 22 ms
   - 95th percentile: 25 ms
   - 99th percentile: 27 ms
-
-**두번째 시나리오**
 - **Redis**:
   - 50th percentile: 5 ms
-  - 75th percentile: 7 ms
-  - 95th percentile: 8 ms
-  - 99th percentile: 9 ms
+  - 75th percentile: 5 ms
+  - 95th percentile: 7 ms
+  - 99th percentile: 8 ms
+
+**두번째 시나리오**
 - **RDBMS**:
   - 50th percentile: 18 ms
   - 75th percentile: 20 ms
   - 95th percentile: 28 ms
   - 99th percentile: 281 ms
+- **Redis**:
+  - 50th percentile: 5 ms
+  - 75th percentile: 7 ms
+  - 95th percentile: 8 ms
+  - 99th percentile: 9 ms
 
 **요약**:
 - 첫번째 시나리오: Redis의 평균 응답 시간은 5 ms로, RDBMS의 22 ms보다 월등히 낮습니다.
