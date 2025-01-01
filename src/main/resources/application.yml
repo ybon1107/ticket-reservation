@@ -1,0 +1,11 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: ""
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/first_project
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
