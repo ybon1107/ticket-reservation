@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     services:
       mysql:
         image: mysql:5.7
@@ -31,14 +31,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Check JDK version
-      run: java -version
-
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
 
-    - name: Clean Gradle cache
-      run: .\gradlew.bat clean
+    - name: Make gradlew executable
+      run: chmod +x gradlew
 
     - name: Build with Gradle Wrapper
-      run: .\gradlew.bat build
+      run: ./gradlew build
